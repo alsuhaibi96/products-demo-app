@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head.ejs')%>
+</head>
+<body>
+    <%- include('./partials/header.ejs')%>
+    <div class="container mt-5 details">
+      <div class="row">
+          <div class="col-md-3 img-info">
+              <img class="img-container" src="<%= details.thumbnail %>" alt='' class='img-responsive thumbnail'>
+          </div>
+          <div class="col-md-9 items-info">
+              <h2><%= details.title %></h2>
+              <p><%= details.description %></p>
+              <ul class="list-unstyled">
+                  <li class="w-100 bg-light p-3 mb-2 fs-4 border-bottom">
+                      <i class="fa fa-calendar  "></i>
+                      <span>Category</span> : <%= details.category %> 
+                  </li >
+                  <li class="w-100 bg-light p-3 mb-2 fs-4 border-bottom">
+                      <i class="fa fa-money  "></i>
+                      <span>Price</span> : $<%= details.price %> 
+                  </li>
+                  <li class="w-100 bg-light p-3 mb-2 fs-4 border-bottom">
+                      <i class="fa fa-building  "></i>
+                      <span>Discount Percentage</span> : <%= details.discountPercentage %>
+                  </li>
+                  <li class="w-100 bg-light p-3 mb-2 fs-4 border-bottom">
+                      <i class="fa fa-tags  "></i>
+                      <span>Rating</span> : 
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star text-warning"></i>
+                      <i class="fa fa-star"></i>
+                  </li >
+                  <li class="w-100 bg-light p-3 mb-2 fs-4 border-bottom">
+                      <i class="fa fa-building  "></i>
+                      <span>Brand</span> : <%= details.brand %>
+                  </li>
+                  <li class="tags-items w-100 bg-light p-3 mb-2 fs-4 border-bottom">
+                      <i class="fa fa-user  "></i>
+                      <span>Stock</span> : <%= details.stock %>
+                      
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <h1 class="card-header col-sm-12 mt-4 mb-3">All images</h1>
+   
+  </div>
+  
+</body>
+</html>

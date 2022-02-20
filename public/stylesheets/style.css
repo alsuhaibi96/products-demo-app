@@ -6,3 +6,7 @@ body {
 a {
   color: #00B7FF;
 }
+.img-container{
+  height: 200px;
+  max-width: 100%;
+}
